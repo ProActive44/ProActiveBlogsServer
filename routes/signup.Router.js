@@ -1,6 +1,6 @@
-const express = require("express");
-const bcrypt = require("bcrypt");
-const userModel = require("../models/user.model");
+import express from 'express'
+import bcrypt from 'bcrypt' 
+import userModel from '../models/user.model.js'
 
 const signupRouter = express.Router();
 
@@ -45,4 +45,4 @@ signupRouter.post("/getuser", async (req, res) => {
   }
 });
 
-module.exports = signupRouter;
+export default signupRouter

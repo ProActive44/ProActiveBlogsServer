@@ -1,9 +1,10 @@
-const express = require("express");
-const cors = require("cors");
-const connection = require("./config/db");
-const signupRouter = require("./routes/signup.Router");
-const loginRouter = require("./routes/login.Router");
-require("dotenv").config();
+import express from 'express'
+import cors from 'cors' 
+import connection from "./config/db.js"
+import signupRouter from './routes/signup.Router.js';
+import loginRouter from './routes/login.Router.js';
+import dotenv from 'dotenv'
+dotenv.config();
 
 const app = express();
 app.use(express.json());
